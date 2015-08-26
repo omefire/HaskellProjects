@@ -11,7 +11,7 @@ magic ref = do
 
 main :: IO ()
 main = do
-  ref <- newIORef (Nothing)
+  ref <- newIORef Nothing
   magic ref
   val <- readIORef ref
 
